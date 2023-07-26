@@ -26,10 +26,10 @@
 <body class="font-lato">
     <header class="max-w-[1280px] mx-auto p-3">
         <nav>
-            <div class="navbar bg-[#F85559] rounded-2xl flex justify-between text-white">
+            <div class="navbar md:bg-[#F85559] rounded-full flex justify-between">
                 <div class="navbar-start hidden mid:flex lg:flex">
 
-                    <ul class="menu menu-horizontal px-1">
+                    <ul class="menu menu-horizontal px-1 text-lg text-white">
                         <li><a>Home</a></li>
                         <li>
                             <a>About Us</a>
@@ -42,17 +42,17 @@
                 <div class="flex gap-2 w-56 items-center justify-start lg:navbar-center py-3">
 
                     <img src="./images/logo.png" alt="" class="w-12 ">
-                    <p class="text-2xl font-bold">Fruit Burst</p>
+                    <p class="text-xl md:text-2xl text-white font-bold">Fruit Burst</p>
 
                 </div>
 
                 <div class="navbar-end flex justify-end">
 
                     <div class="relative hidden md:block">
-                        <div class="absolute inset-y-0 right-3 flex items-center pl-3 pointer-events-none">
+                        <div class="absolute inset-y-0 right-5 flex items-center pl-3 pointer-events-none">
                             <i class="fa-solid fa-magnifying-glass text-black text-xl"></i>
                         </div>
-                        <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm rounded-2xl"
+                        <input type="search" id="default-search" class="block w-full p-4 pl-10 -ml-2 text-sm rounded-full"
                             placeholder="Search here" required>
 
                     </div>
@@ -60,14 +60,18 @@
                 </div>
 
 
-                <div class="dropdown">
-                    <label tabindex="0" class="lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+                <div class="dropdown ">
+                    <label tabindex="0" class="text-center lg:hidden">
+                        <i class="fa-solid fa-bars text-black"></i>
+                        
                     </label>
+
+                    <ul tabindex="0" class="menu menu-sm dropdown-content -left-16 z-[1] shadow bg-base-100 rounded-box">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contract</a></li>
+                        <li><a>News</a></li>
+                      </ul>
 
                 </div>
 
@@ -195,17 +199,27 @@
                             </span>
                             days
                         </div>
+                        <div class="flex justify-center items-center">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                       
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-3xl md:text-5xl">
                                 <span style="--value:10;"></span>
                             </span>
                             hours
                         </div>
+                        <div class="flex justify-center items-center">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-3xl md:text-5xl">
                                 <span style="--value:24;"></span>
                             </span>
                             min
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-3xl md:text-5xl">
@@ -536,12 +550,127 @@
 
         </Section>
 
-        
+          
     </main>
 
     <section>
 
     </section>
+    <footer class="footer footer-center p-10 bg-black text-white">
+        <div>
+         <div class="flex gap-2 mb-7 justify-center items-center">
+            <img src="./images/logo.png" alt="">
+            <p class="text-4xl font-bold">Fruit Burst</p>
+         </div>
+         <div class="flex gap-11 flex-wrap justify-center items-center">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Shop</a>
+            <a href="">All Fruits</a>
+            <a href="">Support</a>
+            <a href="">My Account</a>
+         </div> 
+       
+        </div> 
+        <div>
+          <div class="flex gap-3 text-2xl md:gap-8 text-4xl">
+           
+            <a><i class="fa-brands fa-facebook"></i></a> 
+            <a><i class="fa-brands fa-linkedin"></i></a> 
+            <a><i class="fa-brands fa-twitter"></i></a> 
+            <a><i class="fa-brands fa-instagram"></i></a> 
+            <a><i class="fa-brands fa-youtube"></i></a> 
+            <a><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <p>Copyright © 2023 - All right reserved by Tamim Hossain</p>
+      </footer>
+
+
+
+
+    
+            <!-- <section class="my-20 max-w-[1280px] mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 px-5">
+                    <div class="">
+                        <div class="flex">
+                            <div>
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <div>
+                                <h2>Dedicated Team</h2>
+                                <hr>
+                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <div>
+                                <h2>Dedicated Team</h2>
+                                <hr>
+                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <div>
+                                <h2>Dedicated Team</h2>
+                                <hr>
+                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                     
+                    </div>
+
+                    <div class="flex">
+                        <img class="max-w-[350px]" src="./images/whychoose1.png" alt="">
+                    </div>
+
+
+                    <div class="">
+                        <div class="">
+                            <div class="flex justify-end items-center text-end flex-row-reverse ">
+                                <div class="">
+                                    <i class="fa-solid fa-user-group"></i>
+                                </div>
+                                <div>
+                                    <h2>Dedicated Team</h2>
+                                    <hr>
+                                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div>
+                                    <i class="fa-solid fa-user-group"></i>
+                                </div>
+                                <div>
+                                    <h2>Dedicated Team</h2>
+                                    <hr>
+                                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+                            <div class="flex ">
+                                <div>
+                                    <i class="fa-solid fa-user-group"></i>
+                                </div>
+                                <div>
+                                    <h2>Dedicated Team</h2>
+                                    <hr>
+                                    <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                </div>
+                            </div>
+                         
+                        </div>
+
+                    </div>
+                </div>
+
+            </section> -->
+        
 
 </body>
 
